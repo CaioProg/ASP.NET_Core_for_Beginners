@@ -41,15 +41,15 @@ using ContosoCrafts.WebSite.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 25 "C:\Workspace\ContosoCrafts\ContosoCrafts.WebSite\Components\ProductList.razor"
+#line 53 "C:\Workspace\ContosoCrafts\ContosoCrafts.WebSite\Components\ProductList.razor"
        
-    Product selectProduct;
-    string selectProductId;
+    Product selectedProduct;
+    string selectedProductId;
 
     void SelectProduct(string productId)
     {
-        selectProductId = productId;
-        selectProduct = ProductService.GetProducts().First(x => x.Id == productId);
+        selectedProductId = productId;
+        selectedProduct = ProductService.GetProducts().First(x => x.Id == productId);
     }
 
 #line default
